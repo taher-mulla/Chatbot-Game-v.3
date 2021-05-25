@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:id="borderPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+
+    <center>
+        <TextArea fx:id="mainTextArea" wrapText="true" />
+    </center>
+
+    <bottom>
+        <BorderPane>
+            <center>
+                <TextField fx:id="messageArea" />
+            </center>
+            <right>
+                <Button onAction="#sendButton" alignment="BOTTOM_RIGHT" text="Send" />
+            </right>
+        </BorderPane>
+    </bottom>
+
+</BorderPane>
